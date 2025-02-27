@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    font-family: "Helvetica", Sans-serif;
 }
 
 .HeaderSection {
@@ -9,7 +10,21 @@ body, html {
     left: 0;
     width: 100%;
     height: 100px;
-    background: black
+    background: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TopContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 0;
+    margin-top: 100px;
+    width: 100%;
+    height: fit-content;
 }
 
 .FadingRectangle {
@@ -19,6 +34,33 @@ body, html {
     width: 100%;
     height: 150px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+}
+
+.HeroSection {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.HeroSection img {
+    width: 100%;
+    display: block;
+}
+
+.HeroSection p {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: rgba(111, 111, 111, 0.5);
+    padding: 10px 20px;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .FooterSection {
@@ -32,7 +74,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: skyblue;
     font-size: 14px;
 }
 
@@ -48,14 +90,15 @@ body, html {
     margin-right: 10px;
 }
 
-body {
-    background-color: white;
+.Logo {
+    text-align: right;
+    margin-top: 30px;
+    margin-left: 25px;
+    font-size: 48px;
+    font-family: "Copperplate", Fantasy;
+    color: skyblue;
 }
 
-.TopContainer {
-    position: absolute;
-    margin-left: 0px;
-    margin-top: 100px;
-    width: 100%;
-    height: auto;
+body {
+    background-color: navy;
 }
