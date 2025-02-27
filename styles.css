@@ -51,7 +51,7 @@ body, html {
 
 .HeroSection p {
     position: absolute;
-    bottom: -5%;
+    bottom: 70%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
