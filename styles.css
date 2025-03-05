@@ -12,26 +12,27 @@ body, html {
     width: 100%;
     height: 100px;
     background: black;
+    z-index: 2;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.TopContainer {
-    display: block;
-    flex-direction: column;
-    position: absolute;
-    margin-left: 0;
-    margin-top: 100px;
+.FadingRectangle {
+    position: fixed;
+    top: 90px;
+    left: 0;
     width: 100%;
-    height: fit-content;
+    height: 95px;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
 }
 
 .Logo {
     text-align: right;
     margin-top: 30px;
-    margin-left: 25px;
+    margin-left: 30px;
     font-size: 48px;
     font-family: "Copperplate", Fantasy;
     color: skyblue;
@@ -41,25 +42,36 @@ body, html {
     border-radius: 15px;
     height: 40%;
     width: 5%;
-    font-size: 80%;
-    right: 45%;
+    font-size: 100%;
+    position: absolute;
+    right: 8%;
+    font-family: "Copperplate", Fantasy;
+    color: black;
+    background-color: skyblue;
+    border: navy;
 }
 
 .Register {
     border-radius: 15px;
     height: 40%;
     width: 5%;
-    font-size:80%;
-    right: 55%;
+    font-size:100%;
+    position: absolute;
+    right: 2%;
+    font-family: "Copperplate", Fantasy;
+    color: black;
+    background-color: skyblue;
+    border: navy;
 }
 
-.FadingRectangle {
+.HeroSectionContainer {
+    display: block;
+    flex-direction: column;
     position: absolute;
-    top: 0;
-    left: 0;
+    margin-left: 0;
+    margin-top: 100px;
     width: 100%;
-    height: 150px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+    height: fit-content;
 }
 
 .HeroSection {
@@ -76,13 +88,18 @@ body, html {
 }
 
 .CallToAction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    bottom: 85%;
+    bottom: 77.5%;
+    width: 80%;
     margin: auto;
-    width: fit-content;
+    white-space: normal;
+    text-align: center;
     background: rgba(94, 94, 94, 0.5);
     padding: fit-content;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
     border-radius: 5px;
     color: skyblue;
@@ -90,7 +107,6 @@ body, html {
 }
 
 .FooterSection {
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
