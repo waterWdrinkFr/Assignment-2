@@ -1,13 +1,14 @@
 body, html {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    max-width: 100vh;
+    min-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: "Helvetica", sans-serif;
     background-color: black;
 }
 
-.HeaderSection {
+.HeaderSectionContainer {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,7 +32,7 @@ body, html {
 .SearchBar {
     position: absolute;
     left: 40%;
-    width: 40%;
+    width: 35%;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -121,23 +122,23 @@ body, html {
 }
 
 .Rentals, .PriceTags {
-    position: relative;
+    position: absolute;
     left: 5%;
-    top: 43.5rem;
+    top: 44.2rem;
     font-size: 2.2rem;
     color: skyblue;
 }
 
 .PriceTags {
     font-size: 1.45rem;
-    margin-top: 0.5rem;
+    margin-top: 8rem;
 }
 
 .GetStarted {
-    position: relative;
-    top: 50rem;
+    position: absolute;
+    top: 70rem;
     left: 5%;
-    width: 40%;
+    width: 20%;
     padding: 1rem;
     font-size: 3rem;
     font-weight: bold;
