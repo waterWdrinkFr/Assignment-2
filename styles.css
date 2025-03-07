@@ -96,7 +96,7 @@ body, html {
 .CallToAction {
     position: absolute;
     bottom: 60%;
-    width: 90%;
+    width: 85%;
     padding: 1rem;
     border-radius: 5px;
     font-size: 2.5rem;
@@ -110,7 +110,7 @@ body, html {
 .WatchNow {
     position: absolute;
     bottom: 1.5%;
-    left: 10%;
+    left: 7.25%;
     width: 45%;
     height: 12.5%;
     font-size: 2.5rem;
@@ -123,8 +123,8 @@ body, html {
 
 .Rentals, .PriceTags {
     position: absolute;
-    left: 3%;
-    top: 40rem;
+    left: 2%;
+    top: 37.75rem;
     font-size: 2.2rem;
     color: skyblue;
 }
@@ -136,8 +136,8 @@ body, html {
 
 .GetStarted {
     position: absolute;
-    top: 65rem;
-    left: 3%;
+    top: 62.5rem;
+    left: 2%;
     width: 25%;
     padding: 1rem;
     font-size: 2.5rem;
@@ -152,16 +152,18 @@ body, html {
     position: absolute;
     height: 50%;
     max-width: 25%;
-    top: 80%;
+    top: 75%;
     box-shadow: 8px 8px 15px navy;
 }
 
 .Movie1 {
-    left: 31.5%;
+    left: 31%;
+    z-index: 2;
 }
 
 .Movie2 {
-    left: 53.5%;
+    left: 53%;
+    z-index: 1;
 }
 
 .Movie3 {
