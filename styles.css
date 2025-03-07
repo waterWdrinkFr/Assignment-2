@@ -2,7 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    font-family: "Helvetica", Sans-serif;
+    max-width: 100vh;
+    font-family: "Helvetica", sans-serif;
     background-color: black;
 }
 
@@ -18,6 +19,47 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
+}
+
+.Logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: skyblue;
+}
+
+.SearchBar {
+    position: absolute;
+    left: 40%;
+    width: 40%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.Login, .Register {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15px;
+    height: 40%;
+    width: 5%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.Login {
+    right: 11%;
+}
+
+.Register {
+    right: 5%;
 }
 
 .FadingRectangle {
@@ -26,52 +68,13 @@ body, html {
     left: 0;
     width: 100%;
     height: 95px;
-    z-index: 2;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
-}
-
-.Logo {
-    text-align: right;
-    margin-top: 30px;
-    margin-left: 30px;
-    font-size: 48px;
-    font-weight: bold;
-    font-family: "Helvetica", Sans-serif;
-    color: skyblue;
-}
-
-.Login {
-    border-radius: 15px;
-    height: 40%;
-    width: 5%;
-    font-size: 80%;
-    position: absolute;
-    right: 8%;
-    font-family: "Helvetica", Sans-serif;
-    color: black;
-    background-color: skyblue;
-    cursor: pointer;
-}
-
-.Register {
-    border-radius: 15px;
-    height: 40%;
-    width: 5%;
-    font-size: 80%;
-    position: absolute;
-    right: 2%;
-    font-family: "Helvetica", Sans-serif;
-    color: black;
-    background-color: skyblue;
-    cursor: pointer;
+    z-index: 2;
 }
 
 .HeroSectionContainer {
-    display: block;
-    flex-direction: column;
     position: absolute;
-    margin-left: 0;
-    margin-top: 100px;
+    top: 100px;
     width: 100%;
     height: fit-content;
 }
@@ -90,98 +93,103 @@ body, html {
 }
 
 .CallToAction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    bottom: 77.5%;
-    width: 82.5%;
-    margin: auto;
-    white-space: normal;
-    text-align: center;
-    white-space: nowrap;
+    bottom: 70%;
+    width: 77.5%;
+    padding: 1rem;
     border-radius: 5px;
-    font-size: 290%;
+    font-size: 2.9rem;
     font-weight: bold;
-    font-family: "Helvetica", Sans-serif;
+    text-align: center;
     color: skyblue;
     background: rgba(94, 94, 94, 0.4);
+    white-space: normal;
 }
 
 .WatchNow {
     position: absolute;
-    padding: 0;
-    border: none;
-    height: 12.5%;
-    width: 35%;
     bottom: 1.5%;
-    left: 9%;
+    left: 10%;
+    width: 35%;
+    height: 12.5%;
+    font-size: 2.5rem;
     font-weight: bold;
-    font-size: 250%;
-    font-family: "Helvetica", Sans-serif;
     color: skyblue;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
+    border: none;
     cursor: pointer;
 }
 
-.Rentals {
+.Rentals, .PriceTags {
     position: relative;
     left: 2.5%;
-    top: 705px;
-    font-size: 220%;
-    font-family: "Helvetica", Sans-serif;
+    top: 43.5rem;
+    font-size: 2.2rem;
     color: skyblue;
+}
+
+.PriceTags {
+    font-size: 1.45rem;
+    margin-top: 0.5rem;
+}
+
+.GetStarted {
+    position: relative;
+    top: 50rem;
+    left: 2.5%;
+    width: 40%;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: skyblue;
+    background: navy;
+    border: none;
+    cursor: pointer;
+}
+
+.Movie1, .Movie2, .Movie3 {
+    position: absolute;
+    height: 50%;
+    max-width: 30%;
+    top: 80%;
+    box-shadow: 8px 8px 15px navy;
 }
 
 .Movie1 {
-    position: absolute;
-    height: 50%;
-    width: auto;
     left: 37%;
-    top: 80%;
-    box-shadow: navy 8px 8px 15px;
 }
 
 .Movie2 {
-    position: absolute;
-    height: 50%;
-    width: auto;
     left: 57.5%;
-    top: 80%;
-    box-shadow: navy 8px 8px 15px;
 }
 
 .Movie3 {
-    position: absolute;
-    height: 50%;
-    width: auto;
     left: 77.5%;
-    top: 80%;
-    box-shadow: navy 8px 8px 15px;
 }
 
 .FooterSection {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -24rem;
     width: 100%;
-    height: 7.5%;
+    height: 5%;
     background: linear-gradient(to top, navy, rgba(255, 255, 255, 0));
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
     color: skyblue;
-    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.SocialMedia, .SiteInfo {
+    margin-bottom: -30px;
 }
 
 .SocialMedia {
-    text-align: left;
-    margin-bottom: -30px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .SiteInfo {
-    text-align: right;
-    margin-bottom: -30px;
-    margin-right: 10px;
+    margin-right: 35px;
 }
