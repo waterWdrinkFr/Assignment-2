@@ -103,7 +103,7 @@ body, html {
     font-weight: bold;
     text-align: center;
     color: skyblue;
-    background: rgba(94, 94, 94, 0.4);
+    background: rgba(65, 65, 65, 0.4);
     white-space: normal;
 }
 
@@ -150,24 +150,24 @@ body, html {
 
 .Movie1, .Movie2, .Movie3 {
     position: absolute;
-    height: 50%;
-    max-width: 25%;
+    height: 40%;
+    max-width: 20%;
     top: 75%;
     box-shadow: 8px 8px 15px navy;
 }
 
 .Movie1 {
-    left: 31%;
+    left: 33.5%;
     z-index: 2;
 }
 
 .Movie2 {
-    left: 53.5%;
+    left: 56%;
     z-index: 1;
 }
 
 .Movie3 {
-    left: 75%;
+    left: 77.5%;
 }
 
 .FooterSection {
